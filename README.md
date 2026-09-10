@@ -46,9 +46,11 @@ Four blocks means I run it in production and can debug it at 3 a.m. One block me
 
 ## Activity
 
+Generated nightly by a workflow in this repo, straight from the GitHub API. The language split covers public repos only; most of my work lives in private ones.
+
 <p>
-  <img src="https://github-readme-stats.vercel.app/api?username=arsalan-arain&show_icons=true&hide_border=true&bg_color=060B14&title_color=37E5FF&icon_color=37E5FF&text_color=DCE6F5&hide_title=true&hide_rank=true" alt="GitHub stats" height="165">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=arsalan-arain&layout=compact&hide_border=true&bg_color=060B14&title_color=37E5FF&text_color=DCE6F5&langs_count=6" alt="Top languages" height="165">
+  <img src="https://raw.githubusercontent.com/arsalan-arain/arsalan-arain/output/stats.svg" alt="Contribution stats" height="195">
+  <img src="https://raw.githubusercontent.com/arsalan-arain/arsalan-arain/output/langs.svg" alt="Languages across public repos" height="165">
 </p>
 
 <img src="https://raw.githubusercontent.com/arsalan-arain/arsalan-arain/output/snake.svg" alt="Contribution graph, eaten by a snake" width="100%">
