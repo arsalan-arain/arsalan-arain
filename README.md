@@ -45,13 +45,6 @@ Four blocks means I run it in production and can debug it at 3 a.m. One block me
 
 ## Activity
 
-Generated nightly by a workflow in this repo, straight from the GitHub API. The language split covers public repos only; most of my work lives in private ones.
-
-<p>
-  <img src="https://raw.githubusercontent.com/arsalan-arain/arsalan-arain/output/stats.svg" alt="Contribution stats" height="195">
-  <img src="https://raw.githubusercontent.com/arsalan-arain/arsalan-arain/output/langs.svg" alt="Languages across public repos" height="165">
-</p>
-
 <img src="https://raw.githubusercontent.com/arsalan-arain/arsalan-arain/output/snake.svg" alt="Contribution graph, eaten by a snake" width="100%">
 
 ## Reach me

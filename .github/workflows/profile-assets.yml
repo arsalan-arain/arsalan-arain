@@ -15,23 +15,6 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:
-      - name: Check out scripts
-        uses: actions/checkout@v4
-        with:
-          path: src
-
-      - name: Set up Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
-
-      - name: Generate stats cards
-        run: node src/scripts/stats.mjs
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          GH_LOGIN: ${{ github.repository_owner }}
-          OUT_DIR: dist
-
       - name: Generate snake
         uses: Platane/snk@v3
         with:
