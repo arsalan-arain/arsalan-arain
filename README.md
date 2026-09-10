@@ -8,7 +8,7 @@
 
 I build the parts of a system that have to be right when everything else is on fire.
 
-Software engineer at [Sastaticket](https://sastaticket.pk), an online travel agency. I work across the stack of a booking platform: the search and checkout interfaces in **React** and **Next.js**, the real-time layer that keeps fares and seat availability live over **WebSockets** and **MQTT**, and the **Django** services behind booking and payment flows that have to survive retries and duplicate webhooks. **JavaScript and TypeScript** are home. Python and Django are where I spend a growing share of my time. Machine learning where it earns its place, with evals rather than vibes.
+Software engineer at [Sastaticket](https://sastaticket.pk), an online travel agency. I work across the stack of a booking platform: the search and checkout interfaces in **React** and **Next.js**, and increasingly the **Django** services behind booking and payment flows that have to survive retries and duplicate webhooks. **JavaScript and TypeScript** are home. Before this I built real-time products over **WebSockets** and **MQTT**, Chrome extensions, and Firebase-backed apps. Machine learning where it earns its place, with evals rather than vibes.
 
 ```text
 $ cat principles.md
@@ -38,8 +38,7 @@ Four blocks means I run it in production and can debug it at 3 a.m. One block me
 
 ## Currently
 
-- Streaming flight search results to the browser as suppliers reply, so the page is useful in the first second instead of after the slowest airline.
-- Keeping fares and seat availability live over WebSockets and MQTT without hammering the backend or the client.
+- Shipping the search and checkout experience in Next.js, where a slow page is a lost booking.
 - Moving deeper into Django: booking and payment services where a duplicate webhook must be a no-op, not a second ticket.
 - Building retrieval over fare rules and airline policies, gated by an eval set that blocks regressions before they ship.
 - Using Claude Code daily for the boring parts, and writing down what works.
