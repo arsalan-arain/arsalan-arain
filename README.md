@@ -8,7 +8,7 @@
 
 I build the parts of a system that have to be right when everything else is on fire.
 
-Software engineer at [Sastaticket](https://sastaticket.pk), an online travel agency. I work across the stack of a booking platform: flight search and pricing in the backend, booking and payment flows that have to survive retries and duplicate webhooks, and the web and mobile clients on top. Backends in **Django**, **Go** and **Rust**. Interfaces in **Next.js** and **Flutter**. Machine learning where it earns its place, with evals rather than vibes.
+Software engineer at [Sastaticket](https://sastaticket.pk), an online travel agency. I work across the stack of a booking platform: the search and checkout interfaces in **React** and **Next.js**, the real-time layer that keeps fares and seat availability live over **WebSockets** and **MQTT**, and the **Django** services behind booking and payment flows that have to survive retries and duplicate webhooks. **JavaScript and TypeScript** are home. Python and Django are where I spend a growing share of my time. Machine learning where it earns its place, with evals rather than vibes.
 
 ```text
 $ cat principles.md
@@ -24,22 +24,23 @@ $ cat principles.md
 
 Four blocks means I run it in production and can debug it at 3 a.m. One block means I have used it and would need a week to be dangerous.
 
-| Backend | Client | Data | Ops & AI |
+| Frontend | Backend | Realtime & data | Ops & AI |
 |---|---|---|---|
-| Python / Django `████` | TypeScript `████` | PostgreSQL `████` | OpenTelemetry / Grafana `████` |
-| Go `████` | Next.js / React `████` | Redis `████` | CI/CD · GitHub Actions `████` |
-| Node.js `███` | Flutter / Dart `███` | Kafka / RabbitMQ `███` | Docker / Kubernetes `███` |
-| Rust `███` | CSS · design systems `███` | pgvector `███` | AWS `███` |
-| gRPC / REST `████` | Canvas / WebGL `██` | ClickHouse `██` | Retrieval · evals · Claude API `███` |
+| TypeScript / JavaScript `████` | Node.js · Express `████` | WebSockets `████` | CI/CD · GitHub Actions `████` |
+| React · Next.js `████` | Python · Django `███` | MQTT `███` | Docker `███` |
+| Chrome extensions `███` | REST · GraphQL `████` | PostgreSQL `███` | AWS (S3, CloudWatch) `███` |
+| React Query · Zustand · Redux `████` | Firebase (Auth, Firestore, FCM) `███` | Redis `███` | Retrieval · evals · Claude API `███` |
+| Tailwind · SASS · MUI · AntD `████` | Webhooks · idempotency `███` | MongoDB `██` | Observability · OpenTelemetry `██` |
 
 <p>
-  <img src="https://skillicons.dev/icons?i=py,django,go,rust,ts,nextjs,react,flutter,dart,nodejs,postgres,redis,kafka,docker,kubernetes,aws,grafana,githubactions&perline=9" alt="tools">
+  <img src="https://skillicons.dev/icons?i=ts,js,react,nextjs,nodejs,express,py,django,firebase,postgres,redis,mongodb,tailwind,sass,docker,aws,githubactions,figma&perline=9" alt="tools">
 </p>
 
 ## Currently
 
-- Fanning flight search out to a dozen suppliers with a hard latency budget and hedged retries, so one slow airline never slows the customer.
-- Making booking state machines idempotent end to end, so a payment webhook arriving twice is a no-op instead of a second ticket.
+- Streaming flight search results to the browser as suppliers reply, so the page is useful in the first second instead of after the slowest airline.
+- Keeping fares and seat availability live over WebSockets and MQTT without hammering the backend or the client.
+- Moving deeper into Django: booking and payment services where a duplicate webhook must be a no-op, not a second ticket.
 - Building retrieval over fare rules and airline policies, gated by an eval set that blocks regressions before they ship.
 - Using Claude Code daily for the boring parts, and writing down what works.
 

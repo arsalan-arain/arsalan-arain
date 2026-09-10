@@ -18,7 +18,7 @@
     <text x="60" y="112" fill="#37E5FF" class="m" font-size="14" letter-spacing="2">$ whoami</text>
     <text x="58" y="180" fill="#DCE6F5" font-size="72" font-weight="800" letter-spacing="-2">ARSALAN</text>
     <text x="58" y="248" fill="none" stroke="#DCE6F5" stroke-width="1.5" font-size="72" font-weight="800" letter-spacing="-2">ALI</text>
-    <text x="60" y="286" fill="#8397B5" class="m" font-size="14">software engineer · karachi · django · go · rust · next.js · flutter<tspan class="cur" fill="#37E5FF">▍</tspan></text>
+    <text x="60" y="286" fill="#8397B5" class="m" font-size="14">software engineer · karachi · typescript · react · next.js · node · django<tspan class="cur" fill="#37E5FF">▍</tspan></text>
   </g>
   <g transform="translate(700,40)">
     <rect x="0" y="112" width="84" height="36" rx="3" fill="#0D1628" stroke="#37E5FF" stroke-width="1.2"/>
